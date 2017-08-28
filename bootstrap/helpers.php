@@ -9,7 +9,7 @@ function get_db_config()
       'host' => $url['host'],
       'database' => substr($url['path'], 1),
       'username' => $url['user'],
-      'passsword' => $url['pass'],
+      'password' => $url['pass'],
     ];
   } else {
     return $db_config = [
@@ -21,5 +21,3 @@ function get_db_config()
     ];
   }
 }
-
- ?>
